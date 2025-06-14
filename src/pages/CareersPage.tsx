@@ -3,7 +3,7 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, Sparkles } from 'lucide-react';
+import { Briefcase, Sparkles, Users } from 'lucide-react'; // Combined Users import here
 
 const CareersPage = () => {
   return (
@@ -63,7 +63,7 @@ const CareersPage = () => {
   );
 };
 
-// Need to import Users icon if used in CareersPage
-import { Users } from 'lucide-react'; 
+// Removed the misplaced import from the end of the file.
 export default CareersPage;
 ```
+
