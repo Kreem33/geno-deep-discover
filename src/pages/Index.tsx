@@ -3,6 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import HeroSection from '@/components/sections/HeroSection';
 import FutureMedicineSection from '@/components/sections/FutureMedicineSection';
 import PlatformSection from '@/components/sections/PlatformSection';
+import HowItWorksSection from '@/components/sections/HowItWorksSection'; // Added import
 import Footer from '@/components/layout/Footer';
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
         <HeroSection />
         <FutureMedicineSection />
         <PlatformSection />
+        <HowItWorksSection /> {/* Added new section */}
         {/* You can add more sections here as we build them out */}
       </main>
       <Footer />
@@ -21,3 +23,4 @@ const Index = () => {
 };
 
 export default Index;
+
