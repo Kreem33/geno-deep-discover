@@ -1,8 +1,8 @@
 
 ```typescript
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "./components/ui/toaster"; // Changed from @/
+import { Toaster as Sonner } from "./components/ui/sonner"; // Changed from @/
+import { TooltipProvider } from "./components/ui/tooltip"; // Changed from @/
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
