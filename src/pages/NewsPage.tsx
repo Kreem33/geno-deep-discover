@@ -1,5 +1,4 @@
 
-```typescript
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -51,4 +50,3 @@ const NewsPage = () => {
 };
 
 export default NewsPage;
-```

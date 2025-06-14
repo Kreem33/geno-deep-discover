@@ -1,5 +1,4 @@
 
-```typescript
 import React from 'react';
 import { Dna } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -45,4 +44,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-```

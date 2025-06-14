@@ -1,9 +1,8 @@
 
-```typescript
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Briefcase, Sparkles, Users } from 'lucide-react'; // Combined Users import here
+import { Briefcase, Sparkles, Users } from 'lucide-react';
 
 const CareersPage = () => {
   return (
@@ -63,7 +62,4 @@ const CareersPage = () => {
   );
 };
 
-// Removed the misplaced import from the end of the file.
 export default CareersPage;
-```
-

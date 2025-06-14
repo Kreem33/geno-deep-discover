@@ -1,5 +1,4 @@
 
-```typescript
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Users, Target, Lightbulb } from 'lucide-react';
@@ -54,4 +53,3 @@ const AboutUsPage = () => {
 };
 
 export default AboutUsPage;
-```
