@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <a href="/" className="flex items-center space-x-2 text-lg font-semibold text-primary mb-4">
               <Dna className="h-6 w-6" />
-              <span>GenoDeep Discover</span>
+              <span>Kreem Genomic</span>
             </a>
             <p className="text-sm">
               Transforming lives through genetic insights and advanced AI.
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} GenoDeep Discover. All rights reserved.</p>
+          <p>&copy; {currentYear} Kreem Genomic. All rights reserved.</p>
         </div>
       </div>
     </footer>

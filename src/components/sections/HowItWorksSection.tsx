@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, TestTube2, BrainCircuit, FileCheck2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -32,7 +31,7 @@ const HowItWorksSection = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">How GenoDeep Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">How Kreem Genomic Works</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A simple and secure process to unlock your genetic potential and gain valuable health insights.
           </p>
@@ -64,4 +63,3 @@ const HowItWorksSection = () => {
 };
 
 export default HowItWorksSection;
-

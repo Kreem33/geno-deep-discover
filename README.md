@@ -1,4 +1,5 @@
-# Welcome to your Lovable project
+
+# Welcome to your Lovable project: Kreem Genomic
 
 ## Project info
 
@@ -27,7 +28,7 @@ Follow these steps:
 git clone <YOUR_GIT_URL>
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd <YOUR_PROJECT_NAME> // This might now be 'kreem-genomic' or similar based on slugification
 
 # Step 3: Install the necessary dependencies.
 npm i

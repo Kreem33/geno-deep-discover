@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center space-x-2 text-xl font-semibold text-primary">
           <Dna className="h-7 w-7" />
-          <span>GenoDeep Discover</span>
+          <span>Kreem Genomic</span>
         </a>
         <div className="flex items-center space-x-4">
           <Button variant="ghost">Our Science</Button>
