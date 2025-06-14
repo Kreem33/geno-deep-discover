@@ -2,7 +2,31 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Rss } from 'lucide-react';
+import { Newspaper } from 'lucide-react'; // Changed from Rss to Newspaper
+
+const newsArticles = [
+  {
+    id: 1,
+    title: "Kreem Genomic Announces Breakthrough in AI-Driven Cancer Detection",
+    date: "June 10, 2025",
+    summary: "Our latest research published in 'Nature Medicine' highlights a novel AI algorithm that significantly improves early-stage cancer detection accuracy using genomic data.",
+    link: "#", // Placeholder link
+  },
+  {
+    id: 2,
+    title: "New Partnership to Expand Genomic Data Platform",
+    date: "May 22, 2025",
+    summary: "Kreem Genomic is excited to announce a strategic partnership with QuantumLeap AI to enhance our genomic data analysis capabilities and accelerate therapeutic discovery.",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Dr. Elara Vance Joins Kreem Genomic as Chief Scientific Officer",
+    date: "April 15, 2025",
+    summary: "We are thrilled to welcome Dr. Elara Vance, a renowned expert in computational biology, to lead our scientific research and development efforts.",
+    link: "#",
+  },
+];
 
 const NewsPage = () => {
   return (
@@ -10,7 +34,7 @@ const NewsPage = () => {
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-12">
         <div className="text-center py-16">
-          <Rss className="h-16 w-16 text-sky-400 mx-auto mb-6" />
+          <Newspaper className="h-16 w-16 text-sky-400 mx-auto mb-6" /> {/* Changed icon */}
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-400 mb-6">
             Latest News & Updates
           </h1>
@@ -19,20 +43,18 @@ const NewsPage = () => {
           </p>
         </div>
 
-        {/* Placeholder for news articles */}
         <div className="py-12">
           <h2 className="text-3xl font-semibold text-sky-400 mb-8 text-center">Recent Articles</h2>
           <div className="space-y-8 max-w-3xl mx-auto">
-            {[...Array(3)].map((_, i) => (
-              <div key={i} className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-sky-400 mb-2">News Article Title {i + 1}</h3>
-                <p className="text-sm text-slate-500 mb-3">October 26, 2025</p>
+            {newsArticles.map((article) => (
+              <div key={article.id} className="bg-slate-800/50 p-6 rounded-lg border border-slate-700 shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-sky-400 mb-2">{article.title}</h3>
+                <p className="text-sm text-slate-500 mb-3">{article.date}</p>
                 <p className="text-slate-400">
-                  A brief summary of the news article will go here. This is placeholder content. 
-                  (Content to be added)
+                  {article.summary}
                 </p>
-                <Button variant="link" className="text-cyan-400 hover:text-cyan-300 p-0 mt-3">
-                  Read More &rarr;
+                <Button variant="link" asChild className="text-cyan-400 hover:text-cyan-300 p-0 mt-3">
+                  <a href={article.link}>Read More &rarr;</a>
                 </Button>
               </div>
             ))}
